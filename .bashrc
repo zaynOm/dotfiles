@@ -8,3 +8,9 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
+
+
+# Custom aliases
+alias ll='ls -la --color=auto'
+alias vim='nvim'
+alias vi='nvim'
