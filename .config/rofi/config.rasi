@@ -1,1 +1,12 @@
+configuration {
+  display-drun: "Apps";
+  display-window: "Windows:";
+  //font: "Hack 10";
+  modi: "window,run,drun";
+  show-icons: true;
+  icon-theme: "BeautyLine";
+}
+
+
+
 @theme "/usr/share/rofi/themes/android_notification.rasi"
