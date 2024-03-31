@@ -11,6 +11,7 @@ PS1='[\u@\h \W]\$ '
 
 
 # Custom aliases
+alias sudo='sudo '
 alias ll='ls -la --color=auto'
-alias vim='nvim'
-alias vi='nvim'
+alias vim=nvim
+alias vi=nvim
