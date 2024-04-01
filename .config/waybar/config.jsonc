@@ -45,10 +45,12 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+	"on-click": "alacritty -e btop"
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+	"on-click": "alacritty -e btop"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -60,7 +62,8 @@
             "",
             "",
             ""
-        ]
+        ],
+	"on-click": "alacritty -e btop"
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -99,9 +102,9 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
+        "format": "{volume}% {icon}  {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format-bluetooth-muted": " {icon}  {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
