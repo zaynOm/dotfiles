@@ -1,3 +1,2 @@
-vim.opt.nu = true
-vim.opt.rnu = true
-
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")

@@ -1,14 +1,77 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/challenger_deep.toml"
+]
+
 [font]
 size = 12.0
 
 [font.normal]
-family = "Hack"
+family = "FiraCode Nerd Font"
 style = "Regular"
 
 [window]
-opacity = 0.7
+# opacity = 0.8
+# blur = true
+dimensions = { columns = 150, lines = 40 }
+decorations = 'None'
 
-[window.padding]
-x = 15
-y = 15
+[env]
+TERM = "xterm-256color"
 
+[[keyboard.bindings]]
+key = "K"
+chars = "\u0001J"
+mods = "Control|Alt"
+
+[[keyboard.bindings]]
+chars = "\u0001n"
+key = "Tab"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u0001p"
+key = "Tab"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0001c"
+key = "T"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u0001x"
+key = "W"
+mods = "Control|Alt"
+
+# deatach from tmux
+# [[keyboard.bindings]]
+# chars = "\u0001d"
+# key = "D"
+# mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u00011"
+key = "Key1"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u00012"
+key = "Key2"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u00013"
+key = "Key3"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u00014"
+key = "Key4"
+mods = "Control"
+
+# # accept ctrl enter
+# [[keyboard.bindings]]
+# chars = "\u001b[13;5u"
+# key = "Enter"
+# mods = "Control"
