@@ -28,7 +28,7 @@ path = "~/dotfiles/.config/sesh/"
 startup_command = "nvim sesh.toml"
 
 [[session]]
-name = "zsh config"
+name = "dotfiles"
 path = "~/dotfiles"
 disable_startup_command = true
 
