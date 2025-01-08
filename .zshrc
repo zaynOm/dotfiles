@@ -31,7 +31,7 @@ if [[ -z "$NVIM" ]] && [[ $(tty) == *"pts"* ]] && [[ -z "$TMUX" ]]; then
   fastfetch
 fi
 
-export PNPM_HOME="/home/hox/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -71,7 +71,7 @@ function y() {
 }
 
 # bun completions
-[ -s "/home/hox/.bun/_bun" ] && source "/home/hox/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # set vi keybindings
 set -o vi
