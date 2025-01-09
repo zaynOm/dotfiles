@@ -28,7 +28,7 @@ return {
           color = function() return {fg=Snacks.util.color("Special")} end,
         },
       },
-      lualine_y = {},
+      -- lualine_y = {},
       lualine_z = {},
     },
   },
