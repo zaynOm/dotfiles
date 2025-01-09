@@ -75,3 +75,8 @@ function y() {
 
 # set vi keybindings
 set -o vi
+
+# set pager for man
+export PAGER='most'
+# this solves lacking colors for pager https://github.com/jedsoft/most/issues/9#issuecomment-2558517596
+export GROFF_NO_SGR=1
