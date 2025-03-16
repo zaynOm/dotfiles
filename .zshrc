@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git zsh-syntax-highlighting sudo zsh-autosuggestions )
+plugins=(git zsh-syntax-highlighting sudo zsh-autosuggestions laravel artisan composer)
 
 source $ZSH/oh-my-zsh.sh
 
