@@ -11,10 +11,12 @@ vim.g.python3_host_prog = "~/.pyenv/versions/nvim-venv/bin/python3"
 
 -- Enable the option to require a Prettier config file
 -- If no prettier config file is found, the formatter will not be used
--- vim.g.lazyvim_prettier_needs_config = false
+vim.g.lazyvim_prettier_needs_config = false
 
 -- vim.opt.swapfile = false
 -- vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
 -- vim.opt.shiftwidth = 4
+
+vim.g.lazyvim_php_lsp = "intelephense"

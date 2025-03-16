@@ -20,6 +20,15 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
+    -- dependencies = {
+    --   init = function()
+    --     require("lazyvim.util").lsp.on_attach(function(_, bufnr)
+    --       local opts = { noremap = true, silent = true, buffer = bufnr }
+    --
+    --       vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+    --     end)
+    --   end,
+    -- },
     opts = {
       servers = {
         pylsp = {
@@ -73,6 +82,16 @@ return {
           },
         },
         cssls = {},
+        volar = {
+          on_attach = function(_, bufnr)
+            -- 1. Preserve LazyVim's default keymaps
+            require("lazyvim.util").lsp.on_attach(_, bufnr)
+
+            -- 2. Override 'gd' to use LSP definition (not Telescope)
+            local opts = { buffer = bufnr, desc = "Goto Definition" }
+            vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+          end,
+        },
       },
     },
   },

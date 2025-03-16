@@ -14,17 +14,11 @@ disable_ligatures never
 resize_in_steps no
 # linux_display_server X11
 
-# map ctrl+alt+k send_text all \x01\x4A
-# map ctrl+t send_text all \x01\x4A
-# map ctrl+alt+k combine : send_key ctrl+a : send_key J
 map ctrl+alt+k send_text all \x01J
 map ctrl+t send_text all \x01c
 map ctrl+alt+w send_text all \x01x
 map ctrl+tab send_text all \x01n
 map ctrl+shift+tab send_text all \x01p
-
-
-
 
 # BEGIN_KITTY_THEME
 # Catppuccin-Mocha
