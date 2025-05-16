@@ -4,39 +4,46 @@
     "type": "small",
     "padding": {
       "left": 2,
-      "top": 2
-    }
+      "top": 2,
+    },
   },
   "display": {
-    "separator": "\u001b[31m->   ",
+    "separator": " \u001b[31m-> ",
   },
   "modules": [
-
     "title",
     "separator",
-    "kernel",
-    "uptime",
-    "packages",
-    "terminal",
-    "wm",
-    "cpu",
     {
-
-      "type": "cpu",
-      "key": "Cpu       ",
-      "format": "{}"
+      "type": "os",
+      "key": "os    ",
+      "keyColor": "33",
     },
-    "gpu",
+    {
+      "type": "kernel",
+      "key": "kernel",
+      "keyColor": "33",
+    },
+    {
+      "type": "packages",
+      "format": "{} (pacman)",
+      "key": "pkgs  ",
+      "keyColor": "33",
+    },
+    {
+      "type": "uptime",
+      "format": "{2}h {3}m",
+      "key": "uptime",
+      "keyColor": "33",
+    },
     {
       "type": "memory",
-      "key": "Memory    ",
-      "format": "{/1}{-}{/}{/2}{-}{/}{} / {}"
+      "key": "memory",
+      "keyColor": "33",
     },
     "break",
     {
       "type": "colors",
-      "symbol": "circle",
-      "paddingLeft": 6
+      "symbol": "triangle",
     },
   ],
 }

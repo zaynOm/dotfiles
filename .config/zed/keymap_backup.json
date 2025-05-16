@@ -9,8 +9,8 @@
   {
     "context": "ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
     "bindings": {
-      "ctrl-l": ["workspace::SendKeystrokes", "right"],
-      "ctrl-h": ["workspace::SendKeystrokes", "left"]
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "left"]
     }
   },
   {
@@ -45,7 +45,7 @@
       "space  x x": "diagnostics::Deploy",
 
       "shift-l": "pane::ActivateNextItem",
-      "shift-h": "pane::ActivatePreviousItem"
+      "shift-h": "pane::ActivatePrevItem"
     }
   },
   {

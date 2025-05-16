@@ -1,8 +1,6 @@
 .bashrc
-hypr
-rofi
-waybar
 launch.sh
+code-oss
 README.md
 
 \.git

@@ -1,13 +1,61 @@
 ;; Caps to escape/control configuration for Kanata
 
+;; defsrc is still necessary
+;;(defcfg
+;;  process-unmapped-keys yes
+;;)
+;;
+;;(defsrc
+;;  caps a s d f j k l ;
+;;)
+;;
+;;(defvar
+;;  tap-time 150
+;;  hold-time 200
+;;)
+;;
+;;(defalias
+;;  escctrl (tap-hold 100 100 esc lctl)
+;;  a (multi nop0 (tap-hold $tap-time $hold-time a lmet))
+;;  s (multi nop0 (tap-hold $tap-time $hold-time s lalt))
+;;  d (multi nop0 (tap-hold $tap-time $hold-time d lsft))
+;;  f (multi nop0 (tap-hold $tap-time $hold-time f lctl))
+;;  j (multi nop0 (tap-hold $tap-time $hold-time j rctl))
+;;  k (multi nop0 (tap-hold $tap-time $hold-time k rsft))
+;;  l (multi nop0 (tap-hold $tap-time $hold-time l ralt))
+;;  ; (multi nop0 (tap-hold $tap-time $hold-time ; rmet))
+;;)
+;;
+;;(deflayer base
+;;  @escctrl @a @s @d @f @j @k @l @;
+;;)
+
+(defcfg
+  process-unmapped-keys yes
+)
+
 (defsrc
-  caps
+)
+
+(deftemplate charmod (char mod)
+  (switch 
+    ((key-timing 3 less-than 250)) $char break
+    () (tap-hold-release-timeout 200 500 $char $mod $char) break
+  )
 )
 
 (defalias
   escctrl (tap-hold 100 100 esc lctl)
 )
 
-(deflayer base
-  @escctrl
+(deflayermap (main)
+  caps @escctrl
+  a (t! charmod a lmet)
+  s (t! charmod s lalt)
+  d (t! charmod d lctl)
+  f (t! charmod f lsft)
+  k (t! charmod k lctl)
+  j (t! charmod j rsft)
+  l (t! charmod l ralt)
+  ; (t! charmod ; rmet)
 )

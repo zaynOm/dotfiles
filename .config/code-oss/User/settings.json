@@ -1,0 +1,130 @@
+{
+  // editor settings
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.iconTheme": "material-icon-theme",
+  "[css]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.sortImports": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  // "editor.fontFamily": "'FiraCode', 'monospace', monospace",
+  "editor.fontFamily": "JetBrains Mono",
+  "workbench.startupEditor": "none",
+  "editor.linkedEditing": true,
+  "window.menuBarVisibility": "toggle",
+  "[javascript]": {
+    "prettier.singleQuote": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "workbench.sideBar.location": "right",
+  "editor.lineNumbers": "relative",
+  "vim.leader": "<space>",
+  "editor.suggest.insertMode": "replace",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.useInlineCompletions": true,
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.languageServer": "None",
+  "terminal.integrated.scrollback": 10000,
+  "vim.useSystemClipboard": true,
+  "codeium.enableConfig": {
+    "*": true,
+    "ignore": true,
+    "markdown": true
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnEnter": "on",
+  "typescript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "editor.parameterHints.enabled": true,
+  "cSpell.userWords": ["Authorizable", "speciality"],
+  // vim extension settings
+  // "vim.normalModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["d"],
+  //     "after": ["\"", "_", "d"]
+  //   },
+  //   {
+  //     "before": ["x"],
+  //     "after": ["\"", "_", "x"]
+  //   },
+  //   {
+  //     "before": ["c"],
+  //     "after": ["\"", "_", "c"]
+  //   }
+  //   // {
+  //   //   "before": ["<leader>", "d"],
+  //   //   "after": ["d"]
+  //   // }
+  // ],
+  // "vim.visualModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["d"],
+  //     "after": ["\"", "_", "d"]
+  //   },
+  //   {
+  //     "before": ["x"],
+  //     "after": ["\"", "_", "x"]
+  //   },
+  //   {
+  //     "before": ["c"],
+  //     "after": ["\"", "_", "c"]
+  //   }
+  //   // {
+  //   //   "before": ["<leader>", "p"],
+  //   //   "after": ["\"", "_", "dP"]
+  //   // }
+  // ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["H"], // Focus previous tab at the left
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["L"], // Focus next tab at the right
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["Q"], // Close current tab
+      "after": ["<C-w>", "q"]
+    }
+  ],
+
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "dart.flutterSdkPath": "/home/hox/.flutter",
+  "explorer.compactFolders": false,
+  "editor.minimap.enabled": false,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "phpsab.executablePathCS": "/home/hox/.local/share/nvim/mason/packages/phpcs/phpcs",
+  "codeium.disableSupercomplete": true,
+  "files.associations": {
+    "*.blade.php": "html"
+  },
+  "vim.easymotion": true,
+  "dart.flutterHotReloadOnSave": "manualIfDirty",
+  "dart.hotReloadOnSave": "manualIfDirty",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "chat.commandCenter.enabled": false
+}
